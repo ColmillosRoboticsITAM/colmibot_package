@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'teleop_keyboard = colmibot.teleop_keyboard:main'
+            'teleop_keyboard = colmibot.teleop_keyboard:main',
+            'teleop_joystick = colmibot.teleop_joystick:main'
         ],
     },
 )
