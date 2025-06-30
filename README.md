@@ -24,9 +24,19 @@ colcon build
 colcon build --packages-select colmibot
 ```
 
+## Controlar el colmibot con el tecaldo
+
+Asumiendo que la ESP32 ya está conectada por cable serial a la computadora, correr
+los siguientes comandos en una terminal:
+```
+cd colmibot_ws
+source install/local_setup.bash
+ros2 run colmibot teleop_keyboard
+```
+
 ## Referencias:
 
 Los siguientes paquetes de ROS2 se utilizaron como referencia:
-https://github.com/ros/ros_tutorials/blob/jazzy/turtlesim/tutorials/teleop_turtle_key.cpp
-https://github.com/ros2/teleop_twist_keyboard
-https://github.com/ros-teleop/teleop_twist_keyboard
+- https://github.com/ros/ros_tutorials/blob/jazzy/turtlesim/tutorials/teleop_turtle_key.cpp
+- https://github.com/ros2/teleop_twist_keyboard
+- https://github.com/ros-teleop/teleop_twist_keyboard
